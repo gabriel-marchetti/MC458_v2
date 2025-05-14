@@ -1,0 +1,7 @@
+add_subdirectory(searching)
+add_subdirectory(numeric)
+add_subdirectory(utils)
+add_subdirectory(sorting)
+add_subdirectory(array_operations)
+add_subdirectory(random)
+add_subdirectory(main)

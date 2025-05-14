@@ -1,0 +1,95 @@
+# Define executable for Linear_Search
+add_executable(Linear_Search linear_search_main.cpp)
+
+target_link_libraries(Linear_Search PRIVATE gabriel_utils)
+target_include_directories(Linear_Search PRIVATE utils)
+
+target_link_libraries(Linear_Search PRIVATE gabriel_searching)
+target_include_directories(Linear_Search PRIVATE searching)
+
+# Define executable for Max_Element
+add_executable(Max_Element max_element_main.cpp)
+
+target_link_libraries(Max_Element PRIVATE gabriel_array_operations)
+target_include_directories(Max_Element PRIVATE array_operations)
+
+target_link_libraries(Max_Element PRIVATE gabriel_utils)
+target_include_directories(Max_Element PRIVATE utils)
+
+target_link_libraries(Max_Element PRIVATE gabriel_random)
+target_include_directories(Max_Element PRIVATE random)
+
+# Define executable for Array_Sum
+add_executable(Array_Sum array_sum_main.cpp)
+
+target_link_libraries(Array_Sum PRIVATE gabriel_array_operations)
+target_include_directories(Array_Sum PRIVATE array_operations)
+
+target_link_libraries(Array_Sum PRIVATE gabriel_utils)
+target_include_directories(Array_Sum PRIVATE utils)
+
+target_link_libraries(Array_Sum PRIVATE gabriel_random)
+target_include_directories(Array_Sum PRIVATE random)
+
+# Define executable for Insertion_Sort
+add_executable(insertion_sort insertion_sort_main.cpp)
+
+target_link_libraries(insertion_sort PRIVATE gabriel_utils)
+target_include_directories(insertion_sort PRIVATE utils)
+
+target_link_libraries(insertion_sort PRIVATE gabriel_random)
+target_include_directories(insertion_sort PRIVATE random)
+
+target_link_libraries(insertion_sort PRIVATE gabriel_sorting)
+target_include_directories(insertion_sort PRIVATE gabriel_sorting)
+
+# Define executable for Insertion_Sort
+add_executable(selection_sort selection_sort_main.cpp)
+
+target_link_libraries(selection_sort PRIVATE gabriel_utils)
+target_include_directories(selection_sort PRIVATE utils)
+
+target_link_libraries(selection_sort PRIVATE gabriel_random)
+target_include_directories(selection_sort PRIVATE random)
+
+target_link_libraries(selection_sort PRIVATE gabriel_sorting)
+target_include_directories(selection_sort PRIVATE gabriel_sorting)
+
+# Define executable for testing merge
+add_executable(merge merge_main.cpp)
+
+target_link_libraries(merge PRIVATE gabriel_utils)
+target_include_directories(merge PRIVATE utils)
+
+# Define executable for merge_sort
+add_executable(merge_sort merge_sort_main.cpp)
+
+target_link_libraries(merge_sort PRIVATE gabriel_utils)
+target_include_directories(merge_sort PRIVATE utils)
+
+target_link_libraries(merge_sort PRIVATE gabriel_random)
+target_include_directories(merge_sort PRIVATE random)
+
+target_link_libraries(merge_sort PRIVATE gabriel_sorting)
+target_include_directories(merge_sort PRIVATE sorting)
+
+# Define executable for binary_conv_main
+add_executable(binary_conv_main binary_conv_main.cpp)
+
+target_link_libraries(binary_conv_main PRIVATE gabriel_utils)
+target_include_directories(binary_conv_main PRIVATE utils)
+
+target_link_libraries(binary_conv_main PRIVATE gabriel_numeric)
+target_include_directories(binary_conv_main PRIVATE numeric)
+
+# Define executable for compute_pol_i_main.cpp
+add_executable(compute_pol_i_main compute_pol_i_main.cpp)
+
+target_link_libraries(compute_pol_i_main PRIVATE gabriel_numeric)
+target_include_directories(compute_pol_i_main PRIVATE numeric)
+
+# Define executable for compute_pol_main.cpp
+add_executable(compute_pol_main compute_pol_main.cpp)
+
+target_link_libraries(compute_pol_main PRIVATE gabriel_numeric)
+target_include_directories(compute_pol_main PRIVATE numeric)
