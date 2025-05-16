@@ -1,6 +1,7 @@
 add_library(
     gabriel_utils STATIC
     print_array.cpp
+    print_matrix.cpp
     array_utils.cpp
 )
 

@@ -93,3 +93,15 @@ add_executable(compute_pol_main compute_pol_main.cpp)
 
 target_link_libraries(compute_pol_main PRIVATE gabriel_numeric)
 target_include_directories(compute_pol_main PRIVATE numeric)
+
+# Define executable for matrix_multiplication_main.cpp
+add_executable(matrix_multiplication_main matrix_multiplication_main.cpp)
+
+target_link_libraries(matrix_multiplication_main PRIVATE gabriel_matrix)
+target_include_directories(matrix_multiplication_main PRIVATE matrix)
+
+target_link_libraries(matrix_multiplication_main PRIVATE gabriel_random)
+target_include_directories(matrix_multiplication_main PRIVATE random)
+
+target_link_libraries(matrix_multiplication_main PRIVATE gabriel_utils)
+target_include_directories(matrix_multiplication_main PRIVATE utils)

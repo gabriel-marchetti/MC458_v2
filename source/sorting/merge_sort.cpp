@@ -1,6 +1,5 @@
-#include <merge_sort.h>
+#include "merge_sort.h"
 #include "array_utils.h"
-
 #include <vector>
 
 void merge_sort(std::vector<int> &arr, int p, int r)
